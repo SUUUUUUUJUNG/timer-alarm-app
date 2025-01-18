@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Timer and Alarm</title>
+    <!-- CSS 파일 연결 -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- JavaScript 파일 연결 -->
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+<div>
+    <h1>Timer and Alarm App</h1>
+
+    <!-- Timer Section -->
+    <section>
+        <h2>Timer</h2>
+        <p id="timer-display">00:00:00</p>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="stopTimer()">Stop</button>
+        <button onclick="resetTimer()">Reset</button>
+    </section>
+
+    <!-- Alarm Section -->
+    <section>
+        <h2>Set Alarm</h2>
+        <input type="time" id="alarm-time">
+        <button onclick="setAlarm()">Set Alarm</button>
+        <p id="alarm-status"></p>
+    </section>
+</div>
+</body>
+</html>
